@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<shape xmlns:andriod="http://schemas.android.com/apk/res/android">
+    <solid andriod:color="#00ADEF" />
+    <stroke
+        andriod:width="1sp"
+        andriod:color="#000000"/>
+</shape>
+
+    <!--
+    사용중인 좌석
+    -->
