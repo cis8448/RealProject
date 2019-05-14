@@ -14,11 +14,10 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-<<<<<<< HEAD
+
 public class MainActivity extends AppCompatActivity {
-=======
-public class MainActivity extends AppCompatActivity{
->>>>>>> 742b90b62400fdf6220b9d6cd7f9aff36a5a5ecd
+
+
 
 
     @Override
