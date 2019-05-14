@@ -9,11 +9,19 @@
     android:orientation="vertical"
     android:padding="30dp">
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="한조 PC방 좌석 정보"
+        android:gravity="center_horizontal"
+        android:textSize="30dp"/>
+
     <!--
     사용중인 좌석 == 하늘색
     예약중인 좌석 == 빨간색
     빈 좌석 == 흰색
     -->
+
 
     <LinearLayout
         android:layout_width="match_parent"
