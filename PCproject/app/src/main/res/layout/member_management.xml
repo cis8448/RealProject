@@ -13,4 +13,30 @@
         android:gravity="center"/>
 
 
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="420dp"
+        android:id="@+id/mList">
+
+    </ListView>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="추가"/>
+
+      <Button
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="삭제"/>
+  </LinearLayout>
+
+
 </LinearLayout>
