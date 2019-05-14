@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "675480690673",
+    "firebase_url": "https://pcproject-fbf00.firebaseio.com",
+    "project_id": "pcproject-fbf00",
+    "storage_bucket": "pcproject-fbf00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675480690673:android:eeaa33af04e92231",
+        "android_client_info": {
+          "package_name": "com.example.pcproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675480690673-mguegvg71ak9ntk9rdkgldauuag95e2r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pcproject",
+            "certificate_hash": "180ce3baa58939b70ae7fb4a573c7eed88c8a505"
+          }
+        },
+        {
+          "client_id": "675480690673-d8f4cvuhmtctjseosljho8d2a3l6jf9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBcOlBrzcflCvUQ5U5637SY7FlpvDQEuaw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675480690673-d8f4cvuhmtctjseosljho8d2a3l6jf9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
