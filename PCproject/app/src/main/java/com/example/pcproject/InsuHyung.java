@@ -115,3 +115,52 @@
 //        outState.putInt("curIndex",sIndex);
 //    }
 //}//TitleFragment
+
+//
+//package com.example.twoscreenfregment0508;
+//
+//import android.content.Intent;
+//import android.content.res.Configuration;
+//import android.support.v7.app.AppCompatActivity;
+//import android.os.Bundle;
+//
+//public class MainActivity extends AppCompatActivity
+//        implements TitleFragment.OnTitleSelectedListener{
+//
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
+//    }
+//    //화면 방향에 따라서
+//    //세로 방향 : 항목 선택 시 DetailActivity 에게 인텐트로
+//    //              선택한 항목의 인덱스를 넘겨줌.
+//    //가로 방향 : 항목 선택 시 DetailFragment 에게 넘겨줌.
+//    //
+//    @Override
+//    public void onTitleSelected(int index) {
+//        /*
+//        public class MainActivity extends AppCompatActivity
+//        implements TitleFragment.OnTitleSelectedListener{
+//        하게되면 빨간줄이 그어지는데 Alt + Enter 를 눌러 onTitleSelected 를 Override 해줘야 한다.
+//         */
+//        if(getResources().getConfiguration().orientation ==
+//                Configuration.ORIENTATION_LANDSCAPE){
+//            //가로방향에 대한 처리
+//            DetailFragment deFrag = new DetailFragment();
+//            //DetailFragment 에 선택 값 전달.
+//            deFrag.setSelection(index);
+//
+//            getSupportFragmentManager().beginTransaction().replace(R.id.detail, deFrag).commit();
+//        }
+//        else {
+//            //세로 방향에 대한 처리
+//            Intent it = new Intent(this, DetailActivity.class);
+//            it.putExtra("index",index);
+//            startActivity(it);
+//        }
+//    }
+//
+//}
+
+
