@@ -4,11 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="760px"
     tools:context=".SeatData"
     android:orientation="vertical"
     android:padding="30dp"
-    android:background="#A4A4A7">
+    android:background="#A4A4A7"
+    android:id="@+id/zz">
 
     <TextView
         android:layout_width="match_parent"

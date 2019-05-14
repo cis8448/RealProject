@@ -2,7 +2,9 @@ package com.example.pcproject;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,37 +12,33 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements FragmentMain.OnTitleSelectedListener{
+
+    FragmentMain fMain;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login);
-        Intent intents = new Intent(MainActivity.this, ProductList.class);
-        startActivity(intents);
+        setContentView(R.layout.activity_main);
+
+        fMain = new FragmentMain();
+        FragmentTransaction ftrans = getSupportFragmentManager().beginTransaction();
+        //l = fin
+        ftrans.replace(R.id.frag, fMain);
+
+        ftrans.commit();
 
     }
 
 
     @Override
     public void onTitleSelected(int index) {
-        if(getResources().getConfiguration().orientation ==
-                Configuration.ORIENTATION_LANDSCAPE){
-            //가로방향에 대한 처리
-            DetailFragment deFrag = new DetailFragment();
-            //DetailFragment 에 선택 값 전달.
-            deFrag.setSelection(index);
 
-            getSupportFragmentManager().beginTransaction().replace(R.id.detail, deFrag).commit();
-        }
-        else {
-            //세로 방향에 대한 처리
-            Intent it = new Intent(this, DetailActivity.class);
-            it.putExtra("index",index);
-            startActivity(it);
     }
 }
 
