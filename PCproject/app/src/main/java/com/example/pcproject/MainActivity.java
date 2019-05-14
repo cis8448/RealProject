@@ -14,13 +14,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-<<<<<<< HEAD
-public class MainActivity extends AppCompatActivity {
-=======
-public class MainActivity extends AppCompatActivity{
->>>>>>> 742b90b62400fdf6220b9d6cd7f9aff36a5a5ecd
-
-
+public class MainActivity extends AppCompatActivity implements FragmentMain.OnTitleSelectedListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,5 +25,9 @@ public class MainActivity extends AppCompatActivity{
     }
 
 
+    @Override
+    public void onTitleSelected(int index) {
+        
+    }
 }
 
