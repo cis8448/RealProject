@@ -14,19 +14,18 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-<<<<<<< HEAD
 public class MainActivity extends AppCompatActivity {
-=======
-public class MainActivity extends AppCompatActivity{
->>>>>>> 742b90b62400fdf6220b9d6cd7f9aff36a5a5ecd
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-        Intent intents = new Intent(MainActivity.this, ProductList.class);
-        startActivity(intents);
+
+        Intent intent = new Intent(MainActivity.this, payspinner.class);
+
+        startActivity(intent);
+
 
     }
 
